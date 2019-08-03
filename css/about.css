@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #252525;
+}
+#container {
+    width: 100%;
+}
+section {
+    padding: 5% 15%;
+    margin: 0 auto;
+}
+
+container-about {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+section h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+}
+
+section p {
+color: white;
+font-family: 'Montserrat', sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+}
+
+.container-about{
+    margin-bottom: 200px;
+}
