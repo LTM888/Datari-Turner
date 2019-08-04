@@ -1,341 +1,223 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Draggable Image Strip | Codrops</title>
-		<meta name="description" content="A draggable image strip layout with a content preview powered by Draggabilly and TweenMax." />
-		<meta name="keywords" content="draggable, images, horizontal, layout, flexbox, grid, css, tweenmax, draggabilly, web design" />
-        <meta name="author" content="Codrops" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 
-        <link rel="stylesheet" href="//daneden.github.io/animate.css/animate.min.css">
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" href="https://use.typekit.net/ugp0unb.css">
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-        
-        <link rel="stylesheet" href="./css/filmstwo.css">
-    </head>
-	<body class="loading">
-        
-                  <main>
-                        <div class="frame">
-                        
-                            </div>
-                            
-                            <div class="frame__indicator"></div>
-                        </div>
-                        <div class="strip-outer">
-                            <div class="strip-inner">
-                                <div class="draggable"></div>
-                                <div class="strip">
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('./img/films/LUV.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>01</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-m"><div class="img-inner" style="background-image:url('./img/films/aboutcheery.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>02</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-xl"><div class="img-inner" style="background-image:url('img/films/salvation.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>03</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/films/videogirl.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>04</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/films/adult.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>05</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-m"><div class="img-inner" style="background-image:url('img/films/friends.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>06</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/films/hip-hop.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>07</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/films/happyday.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>08</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/films/ten.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>09</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer"><div class="img-inner" style="background-image:url('img/films/kili.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>10</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/films/disaster.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>11</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-xl"><div class="img-inner" style="background-image:url('img/films/lisa.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>12</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/films/super.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>13</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/films/a girl.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>14</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/films/j&R.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>15</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-l"><div class="img-inner" style="background-image:url('img/films/9.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>16</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-m"><div class="img-inner" style="background-image:url('img/films/kid.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>17</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer"><div class="img-inner" style="background-image:url('img/films/lap.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>18</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                        <div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/films/gook.jpg');"></div></div>
-                                        <span class="strip__item-number"><a class="strip__item-link"><span>19</span></a><span class="strip__item-plus"></span></span>
-                                    </div>
-                                    <div class="strip__item">
-                                            <div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/films/umtim.jpg');"></div></div>
-                                            <span class="strip__item-number"><a class="strip__item-link"><span>20</span></a><span class="strip__item-plus"></span></span>
-                                        </div>
-                                        <div class="strip__item">
-                                                <div class="img-outer img-outer--size-s"><div class="img-inner" style="background-image:url('img/films/some.jpg');"></div></div>
-                                                <span class="strip__item-number"><a class="strip__item-link"><span>21</span></a><span class="strip__item-plus"></span></span>
-                                            </div>
-                                </div><!--/strip-->
-                            </div><!--/strip-inner-->
-                            <div class="strip-cover">
-                                <h2 class="strip-cover__title">Datari Turner Productions</h2>
-                                
-                            </div>
-                        </div><!--/strip-outer-->
-                        <div class="content">
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/1.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Assemblage</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/2.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Wherewithal</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/3.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Surreptitious</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/4.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Onomatopoeia</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/5.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Nemesis</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/6.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Penumbra</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/7.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Cathedral</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/8.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Propinquity</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/9.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Lissome</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/10.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Moiety</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/11.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Mondegreen</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/12.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Cathedral</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/13.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Gambol</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/14.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Forbearance</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/15.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Evanescent</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/16.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Embrocation</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/17.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Bucolic</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/18.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Eloquence</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <article class="content__item">
-                                <div class="img-outer img-outer--content">
-                                    <div class="img-inner img-inner--content" style="background-image: url(img/19.jpg);"></div>
-                                </div>
-                                <div class="content__item-copy">
-                                    <h2 class="content__item-title">Cathedral</h2>
-                                    <p class="content__item-text">Virtually no important undertaking is now carried on without it, whether that enterprise be building a cathedral, endowing a university, marketing a moving picture, floating a large bond issue, or electing a president.</p>
-                                </div>
-                            </article>
-                            <button class="content__close" aria-label="Close content"><svg width="12" height="26" viewBox="0 0 12 26"><path d="M5.293 25H5v-.293l-5-5L.707 19 5 23.293V0h1v23.657L10.657 19l.707.707-5.657 5.657-.025-.025-.025.025L5.293 25z"/></svg></svg></button>
-                        </div>
-                    </main>
-		<div class="cursor">
-			<div class="cursor__inner cursor__inner--circle">
-				<div class="cursor__side cursor__side--left"></div>
-				<div class="cursor__side cursor__side--right"></div>
-			</div>
+  <link rel="stylesheet" href="http://ciar4n.com/imagehover/css/demo-page.css">
+  <link rel="stylesheet" href="./x.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="//daneden.github.io/animate.css/animate.min.css">
+
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./css/index.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+
+</head>
+<body>
+
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+      
+      <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+          <ul>
+              <li ><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About Datari</a></li>
+              <li><a href="./films.html">Films Projects</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+    <div class="main">
+        <div class="effects" id="effects">
+          <div class="demo">
+            <figure class="imghvr-fade"><img src="./img/n/LUV.heif" alt="01">
+              <figcaption>
+                <h3>LUV</h3>
+                <p>&quot;Accompanied by his young nephew(Michael Rainey Jr.),an ex-convict (Common) tries to raise monry though a drug deal.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-push-up"><img src="./img/n/aboutcherry.heif" alt="02">
+              <figcaption>
+                <h3>About Cherry</h3>
+                <p>&quot;A teenager (Ashley Hinshaw) takes the money she earned for a photo shoot and runs away to San Francisco, where she catches the eye of both a lawyer.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-push-down"><img src="./img/n/salvation.heif" alt="03">
+              <figcaption>
+                <h3>Salvation</h3>
+                <p>&quot;A man (Greg Kinnear) becomes the target of the fundamentalist preacher's (Pierce Brosnan) minions after he sees the preacher.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-push-left"><img src="./img/films/videogirl.heif" alt="04">
+              <figcaption>
+                <h3>Video Girl</h3>
+                <p>&quot;After a knee injury, an aspiring ballerina (Meagan Good) lands a glamorous new career in hip-hop, but soon finds that fame has a dark side.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-push-right"><img src="./img/films/adult.heif" alt="05">
+              <figcaption>
+                <h3>Adulterers</h3>
+                <p>&quot;A husband comes home early on his wedding anniversary and finds his wife in bed with another man.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-slide-up"><img src="./img/films/friends.heif" alt="06">
+              <figcaption>
+                <h3>Dysfunctional friends</h3>
+                <p>&quot;Nine estranged pals have to spend a weekend reconnecting and working thought their issues at a deceased friend estate.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-slide-down"><img src="./img/films/hip-hop.heif" alt="07">
+              <figcaption>
+                <h3>Growing Up Hip Hop</h3>
+                <p>&quot;Growing up with a famous parent isn't easy, as the children often have to work hard to emerge from their parents' shadows.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-slide-left"><img src="./img/films/happyday.heif" alt="08">
+              <figcaption>
+                <h3>Another Happy Day</h3>
+                <p>&quot;A women (Ellen Barkin) attends her son's wedding at the estate of her ex-husband(Thomas Haden Church).&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-slide-right"><img src="./img/films/ten.heif" alt="09">
+              <figcaption>
+                <h3>Ten Thouand Saints</h3>
+                <p>&quot;A teen (Asa Butterfield ), a pregnant girl (Hailee Steinfeld) and the lead singer (Emile Hirsch) of a punk-rock form their own surrogate family.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-reveal-up"><img src="./img/films/kili.heif" alt="10">
+              <figcaption>
+                <h3>Kilimanjaro</h3>
+                <p>&quot;After his girlfriend moves out, a man (Brian Geragty) decided to climb Mount Kilimanjaro as step one toward living a more fulfilling life.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-reveal-down"><img src="./img/films/disaster.heif" alt="11">
+              <figcaption>
+                <h3>It A Disaster</h3>
+                <p>&quot;Four couples having Sunday brunch become stuck together in a houes when they learn the world is ending.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-reveal-left"><img src="./img/films/lisa.heif" alt="12">
+              <figcaption>
+                <h3>Lisa Raye</h3>
+                <p>&quot;Lisa Raye stars in her own reality show along with her daughter Kai .&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-reveal-right"><img src="./img/films/9.heif" alt="13">
+              <figcaption>
+                <h3>9 rides</h3>
+                <p>&quot;An Uber driver gets life-changing news while on duty.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-hinge-up"><img src="./img/films/super.heif" alt="14">
+              <figcaption>
+                <h3>SuperModel</h3>
+                <p>&quot;A young girl from Brooklyn learns that in the world of high fashion things will not always be as glamorous as they seem.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-hinge-down"><img src="./img/films/a girl.heif" alt="15">
+              <figcaption>
+                <h3>A Girl Like Grace</h3>
+                <p>&quot;Seventeen-year-old Grace (Ryan Destiny) has been raised by her single mother (Garcelle Beauvais) in a dysfunctional envitonment.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-hinge-left"><img src="./img/films/lap.heif" alt="16">
+              <figcaption>
+                <h3>Lap Dance</h3>
+                <p>&quot;A woman (Ail Cobrin) becomes an exotic dancer to help pay her cancer stricken father's medical bills, but once she get a taste of the enchanting.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-hinge-right"><img src="./img/films/j&R.heif" alt="17">
+              <figcaption>
+                <h3>Jackie & Ryan</h3>
+                <p>&quot;A chance encounter leads to romance between a down-and-out, former country-music star (Katherine Heigl) and guitar-strumming drifter (Ben Barnes).&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-flip-horiz"><img src="./img/films/kid.heif" alt="18">
+              <figcaption>
+                <h3>Kid Cannabis</h3>
+                <p>&quot;A high school dropout and his 27-year-old friend smuggle marijuana across the Canadian border to make money.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-flip-vert"><img src="./img/films/some.heif" alt="19">
+              <figcaption>
+                <h3>Some Velvet Morning</h3>
+                <p>&quot;Several years after they parted ways, a woman (Alice Eve) receives a suprise visit from her former lover (Stanley Tucci).&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-flip-diag-1"><img src="./img/films/gook.heif" alt="20">
+              <figcaption>
+                <h3>gook</h3>
+                <p>&quot;Eli and Daniel, two Lorean American brothers who own a struggling woman's shoe store, have an unlikely friendship with 11-year-old Kamilla.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          <div class="demo">
+            <figure class="imghvr-flip-diag-2"><img src="./img/films/umtim.heif" alt="21">
+              <figcaption>
+                <h3>Ultimate Hustler</h3>
+                <p>&quot;Ultimate Hustler was an American reality show broadcast on BET created by Datari Turner. The show freatured Damon Dash.&quot;</p>
+              </figcaption><a href="javascript:;"></a>
+            </figure>
+          </div>
+          
+          </div>
         </div>
-        
-        <section class="top">
-                <div class="button_container" id="toggle">
-                        <span class="top"></span>
-                        <span class="middle"></span>
-                        <span class="bottom"></span>
-                      </div>
-                      
-                      <div class="overlay" id="overlay">
-                        <nav class="overlay-menu">
-                                <ul>
-                                        <li ><a href="./index.html">Home</a></li>
-                                        <li><a href="./about.html">About Datari</a></li>
-                                        <li><a href="./films.html">Films Projects</a></li>
-                                        <li><a href="./contact.html">Contact</a></li>
-                                    </ul>
-                        </nav>
-                    </div>
-                
-          </section>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/TweenMax.min.js"></script>
-		<script src="js/draggabilly.pkgd.min.js"></script>
-        <script src="js/demo.js"></script>
-        
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-		<script>
-			// Preload all the images in the page
-            imagesLoaded(document.querySelectorAll('.img-inner'), {background: true}, () => document.body.classList.remove('loading'));
-            
-            $('#toggle').click(function() {
-                $(this).toggleClass('active');
-                $('#overlay').toggleClass('open');
-            });
-		</script>
-	</body>
+      </div>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
 </html>
