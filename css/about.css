@@ -1,8 +1,10 @@
 body {
     background-color: #414141;
-    margin: 0; 
+    margin: 0 auto; 
     padding: 0;
-}
+    box-sizing: border-box;
+    
+} 
 
 .button_container {
     position: fixed;
@@ -160,40 +162,42 @@ body {
    }
 }
 
+/* About ME  */
 
-#container {width:100%;}
-section { padding: 5% 15%; margin: 0 auto;}
-
+body {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 100%;
+    
+}
 section {
     padding: 5% 15%;
     margin: 0 auto;
-  }
-  
-  .container-about {
-    font-family: 'Montserrat', sans-serif;
+    top: 0;
+}
+
+section h1 {
     color: white;
-  }
-  
-  section h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    margin-top: -10px;
+
+}
+
+section p {
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
-  }
-  
-  section p {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  letter-spacing: 2px;
-  }
-  
-  .main {
-  max-height: 550px;;
-  background-color: #292c2f;
-  color: white;
-  font-size: 38pt;
-  text-align: center;
-  line-height: 550px;
-  }
-  
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    line-height: 1.6;
+
+}
+
+.container {
+    width: 100%;
+    
+}
+
+
   
